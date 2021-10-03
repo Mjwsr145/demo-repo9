@@ -1,9 +1,117 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- using CSS -->
         <title>Introduciton to HTML</title>
+        <style>
+            #intro {
+                background-color: brown;
+                color: aquamarine;
+                padding: 30px;
+            }
+            .university {
+                text-align: center;
+                color:blueviolet;
+            }
+        </style>
+        <script>
+            function display(form){
+            var message = form.msg.value;
+            var fname = form.fname.value;
+            alert(fname + " says " + message);
+            }
+        </script>
+        <script>
+            function fieldValidation() {
+                let text = document.forms["Form"]["name"].value
+                if (text == ""){
+                    alert("Name field can not be empty!");
+                    return false;
+                    }
+                }
+        </script>
+        <!-- <style>
+            body {
+                background-image: url(car.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed ;
+                background-size: cover;
+                }
+            table,
+            th,
+            tr,
+            td { 
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 5px;
+            color: white
+            } 
+        </style> -->
     </head>
-    <body>Hi There!</body><p>
+    <body> <!-- <p>Hi There!</p> -->
+
+
+        <p></p>
+        <p></p>
+
+        <h3> ...Form validation using JavaScript...</h3>
+        <form name="Form" action="" onsubmit="return fieldValidation()">
+        <label for="name">Enter Name:</label>
+        <input type="text" name="name"> <br><br>
+        <label for="ID">Enter your ID:</label>
+        <input type="text" name="ID" required><br><br>
+        <input type="submit" value="Submit">
+        </form>
+ <p></p>
+<p></p>
+        <form action="" method="GET">
+            <p>What is your name?</p>
+            <input type="text" name="fname" placeholder="First Name">
+            <p>Enter something in the text box:</p>
+            <input type="text" name="msg" placeholder="Write something here">
+            <button onclick="display(this.form)">Click here</button>
+        </form>
+  
+
+<!--        <p class="university">Bradley University, Peoria, IL</p>
+        <p id="intro">Clemson University, Greenville, SC</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<form action="">
+    <p>----Student information----</p>
+    <label for="sname">Student Name:</label>
+    <input type="text" id="sname" placeholder="Mike">
+    <br><br>
+    <label for="sid">Student ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="sid" placeholder="101010">
+    
+
+    <p>Select your department:</p>
+    <input type="radio" id="csis" name="dept" value="csis">
+    <label for="csis">CSIS</label><br>
+    <input type="radio" id="math" name="dept" value="math">
+    <label for="math">Math</label><br>
+    <input type="radio" id="bio" name="dept" value="bio">
+    <label for="bio">Biology</label><br>
+    
+    <p>Select the courses you want to register:</p>
+    <input type="checkbox" id="cs100" value="cs100" name="cs100">
+    <label for="cs100">CS 100 (Basic Programming)</label> <br>
+    <input type="checkbox" id="cs101" value="cs101" name="cs101">
+    <label for="cs101">CS 101</label> <br>
+    <input type="checkbox" id="cs102" value="cs102" name="cs102">
+    <label for="cs102">CS 102</label> <br>
+    <input type="checkbox" id="cs140" value="cs140" name="cs140">
+    <label for="cs140">CS 140</label> <br><br>
+    
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+
+
+
+</form> -->
+        
+
+
  <!--  <a href="https://www.bradley.edu" target="_blank">Click here to Bradley University</a></p>
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
@@ -28,12 +136,90 @@
 
 <p>H<sub>2</sub>O</p>
 
-<p>x<sup>y</sup></p> -->
-<a href="https://www.clemson.edu/">Clemson University</a>
-<a href="https://www.clemson.edu/" target="_blank">Clemson University</a>
+<p>x<sup>y</sup></p> 
+<p><a href="https://www.clemson.edu/">Clemson University</a></p>  
+<p><a href="https://www.clemson.edu/" target="_blank">Clemson University</a></p>  -->
+<p></p>
 <p>
-    <a href="https://www.bradley.edu/"><img src="logo_v2.svg">
+  <!--  <a href="https://www.bradley.edu/" target="_blank"><img src="logo_v2.svg" alt="Bradley logo_v2" ></a> -->
+    <a href="mailto:mike@bradley.edu">Send Me an Email</a>
 </p>
+<p></p>
+<!-- <table>
+    <caption>Student Information.</caption>
+    <tr>
+        <th>Student Name</th>
+        <th>ID</th>
+        <th>GPA</th>
+    </tr>
+
+    <tr>
+        <td>Ethan</td>
+        <td>99999</td>
+        <td>3.99</td>
+    </tr>
+    <tr>
+        <td>Nathan</td>
+        <td>101010</td>
+        <td>3.89</td>
+    </tr>
+</table>
+<br><br><br><br><br><br><br>
+<table>
+    <caption> Student information</caption>
+    <tr>
+        <th>Name</th>
+        <th colspan="2">Emails</th>
+    </tr>
+    <tr>
+        <td>Mike</td>
+        <td>mike@bradley.edu</td>
+        <td>mike@fsmail.bradley.edu</td>
+    </tr>
+</table>
+<br><br><br><br><br><br><br>
+<table>
+    <caption> Student information</caption>
+    <tr>
+        <th>Name</th>
+        <th>Walker</th>
+    </tr>
+    <tr>
+        <th rowspan="2">Email</th>
+        <td>mike@bradley.edu</td>
+    </tr>
+    <tr>
+        <td>mike@fsmail.bradley.edu</td>
+    </tr>
+</table> 
 
 
+
+<p> Departments under LAS:</p>
+<ul>
+    <li>Biology</li>
+    <li>Chemistry</li>
+    <li>CS & IS</li>
+</ul>
+
+<p> Departments under LAS:</p>
+<ol>
+    <li>CS & IS</li>
+    <li>Biology</li>
+    <li>Chemistry</li>
+</ol>
+
+<p> Descriptive list of departments under LAS:</p>
+<dl>
+    <dt>CS & IS</dt>
+    <dd> - Description about CS&IS department</dd>
+    <dt>Biology</dt>
+    <dd> - Description about Biology department</dd>
+    <dt>Chemistry</dt>
+    <dd> - Description about Chemistry department</dd>
+</dl>-->
+<p></p>
+<p></p>
+<a href="#intro">Go to Top</a>
+  </body>
 </html>

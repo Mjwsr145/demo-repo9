@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "demo-repo9-1",
+			"path": "../../demo-repo9-1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "demo-repo9"
+	}
+}
