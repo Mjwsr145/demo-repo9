@@ -5,13 +5,28 @@
         <title>Introduciton to HTML</title>
         <link rel="stylesheet" href="mydesign.css">
         <style>
+            *{
+                font-family: fantasy;
+            }
+
+
+            p,h1,h2{
+                color: coral;
+            }
+
             h3{
                 background-color: blue;
                 color: chartreuse;
             }
             #h3id{
-                text-align: left;
+                text-align: center;
             }
+
+            h4.left{
+                text-align: left;
+                text-decoration: underline;
+            }
+
             #intro {
                 background-color: brown;
                 color: aquamarine;
@@ -66,6 +81,7 @@
         <h2>I am trying to learn how to use css style file</h2>
         <h3>This is my h3 tag information</h3>
         <h3 id="h3id">This is my h3 tag with id information</h3>
+        <h4 class="left">This text belongs to h4 tag</h4>
         <form name="Form" action="" onsubmit="return fieldValidation()">
         <label for="name">Enter Name:</label>
         <input type="text" name="name"> <br><br>
@@ -76,7 +92,7 @@
  <p></p>
 <p></p>
         <form action="" method="GET">
-            <p>What is your name?</p>
+            <p class="left">What is your name?</p>
             <input type="text" name="fname" placeholder="First Name">
             <p>Enter something in the text box:</p>
             <input type="text" name="msg" placeholder="Write something here">
