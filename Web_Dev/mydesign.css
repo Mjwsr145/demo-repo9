@@ -6,4 +6,9 @@ p{
 h1{
     color: blueviolet;
     text-align: center;
+    background-color: yellow;
+}
+
+h2{
+    text-align: right;
 }
