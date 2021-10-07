@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- using CSS -->
+        <title>Introduciton to HTML</title>
+        <link rel="stylesheet" href="mydesign.css">
+        <style>
+            *{
+                font-family: fantasy;
+            }
+
+
+            p,h1,h2{
+                color: coral;
+            }
+
+            h3{
+                background-color: blue;
+                color: chartreuse;
+            }
+            #h3id{
+                text-align: center;
+            }
+
+            h4.left{
+                text-align: left;
+                text-decoration: underline;
+            }
+
+            #intro {
+                background-color: brown;
+                color: aquamarine;
+                padding: 30px;
+            }
+            .university {
+                text-align: center;
+                color:blueviolet;
+            }
+        </style>
+        <script>
+            function display(form){
+            var message = form.msg.value;
+            var fname = form.fname.value;
+            alert(fname + " says " + message);
+            }
+        </script>
+        <script>
+            function fieldValidation() {
+                let text = document.forms["Form"]["name"].value
+                if (text == ""){
+                    alert("Name field can not be empty!");
+                    return false;
+                    }
+                }
+        </script>
+        <!-- <style>
+            body {
+                background-image: url(car.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed ;
+                background-size: cover;
+                }
+            table,
+            th,
+            tr,
+            td { 
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 5px;
+            color: white
+            } 
+        </style> -->
+    </head>
+    <body> <h1> ...Form validation using JavaScript...</h1>
+        <h2>I am trying to learn how to use css style file</h2>
+        <h3>This is my h3 tag information</h3>
+        <h3 id="h3id">This is my h3 tag with id information</h3>
+        <h4 class="left">This text belongs to h4 tag</h4>
+        <form name="Form" action="" onsubmit="return fieldValidation()">
+        <label for="name">Enter Name:</label>
+        <input type="text" name="name"> <br><br>
+        <label for="ID">Enter your ID:</label>
+        <input type="text" name="ID" required><br><br>
+        <input type="submit" value="Submit">
+        </form>
+ <p></p>
+<p></p>
+<p>Hello There</p>
+<p></p>
+<p style="text-align:justify; background-color: rgb(226, 61, 19);color: rgb(73, 13, 73);">Justified InLine</p>
+        <form action="" method="GET">
+            <p class="left">What is your name?</p>
+            <input type="text" name="fname" placeholder="First Name">
+            <p>Enter something in the text box:</p>
+            <input type="text" name="msg" placeholder="Write something here">
+            <button onclick="display(this.form)">Click here</button>
+        </form>
+<a href="#intro">Go to Top</a>
+  </body>
+</html>
