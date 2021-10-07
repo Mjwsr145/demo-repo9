@@ -5,7 +5,7 @@
         <title>Introduciton to HTML</title>
         <link rel="stylesheet" href="mydesign.css">
         <style>
-            *{
+            /*{
                 font-family: fantasy;
             }
 
@@ -35,7 +35,7 @@
             .university {
                 text-align: center;
                 color:blueviolet;
-            }
+            } */
         </style>
         <script>
             function display(form){
@@ -71,7 +71,13 @@
             } 
         </style> -->
     </head>
-    <body> <h1> ...Form validation using JavaScript...</h1>
+    <body> 
+        <p id="pid">Content from HTML</p>
+        <button onclick="document.getElementById('pid').innerHTML='Content is replaced by JavaScript'">Change Text</button>&nbsp;&nbsp;
+        <button onclick="document.getElementById('pid').innerHTML='Content from HTML'">Reset</button>
+        
+    <!--    
+        <h1> ...Form validation using JavaScript...</h1>
         <h2>I am trying to learn how to use css style file</h2>
         <h3>This is my h3 tag information</h3>
         <h3 id="h3id">This is my h3 tag with id information</h3>
@@ -95,6 +101,7 @@
             <input type="text" name="msg" placeholder="Write something here">
             <button onclick="display(this.form)">Click here</button>
         </form>
+    --> <br><br><br>
 <a href="#intro">Go to Top</a>
   </body>
 </html>
