@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variable Test</title>
+        <script>
+            //let a = 10;
+            //const pi = 3.14;
+            //pi = 3.24;
+            //var a = "Walker";
+            {
+                let a = 100;
+                //document.write("The value of a inside the scope:" + a + "<br>")
+            }
+
+            //document.write("The value of a outside the scope:" + a  + "<br>")
+            
+            /* let names = ["Walker", "Mike", "Kelly"];
+            names[2] = "Mr. X";
+            //document.write(names[2]);
+            const Student = {Name: "Walker", ID:9999, GPA:3.99};
+            Student.Name = "Michael";
+            document.write("Student Name: " + Student.Name + " Student GPA: " + Student.GPA) */
+
+            function myfun(x,y){
+                document.write("x: " + x + " y: " + y);
+                return x * y;
+            }
+            document.write("<br>" + "The Resulet is:" + myfun(100,5)); 
+        </script>
+
+
+    </head>
+<body>
+   <!-- <p id="pid">Content from HTML</p>  
+    <button onclick="myfun()">Click Here to See JS Effect</button>&nbsp;&nbsp;
+    <button onclick="resetmyfun()">Reset</button>
+    <script src="myScript.js"></script> -->
+    
+
+    <!-- JavaScript Code 
+    <script>
+        /*function myfun(){
+            document.getElementById('pid').innerHTML='Content is replaced by JavaScript';
+            
+        }
+        document.write("<br><br>"+"We are writing using document.write() method");
+
+        window.alert("Alert is coming from JavaScript");
+        console.log("I am writing from JavaScript console.log");*/
+
+    </script> -->
+
+<!-- Inline JavaScript -->
+<!--  <p id="ppid">Content from HTML Inline Javascript</p>
+<button onclick="document.getElementById('ppid').innerHTML='Content is replaced by Inline JavaScript'">Change Text</button>&nbsp;&nbsp;
+<button onclick="document.getElementById('ppid').innerHTML='Content from HTML Inline Javascript'">Reset</button>
+
+<p></p>
+<button onclick="window.print()">Click to Print</button>-->
+</body>
+</html>
