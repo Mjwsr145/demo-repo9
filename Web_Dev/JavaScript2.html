@@ -7,13 +7,28 @@
         <script>
             //Create Array
             const names = ["Walker", "Smith", "Doe"]
-            
+
             document.write("First name in the names array: "+names[0]+ "<br>"); 
             document.write("Second name in the names array: "+names[1]+ "<br>"+ "<br>"); 
-
+            
+            //iterations
+            document.write("<br>Start of for loop<br>")
             for(let i=0;i<names.length; i++)
                 document.write(names[i] + "<br>")
 
+            //iteration using for of loop
+            document.write("<br>Start of 'of loop'<br>")
+            for (let name of names){
+                document.write(name+"<br>")
+            }
+            
+            //while loop
+            document.write("<br>Start of While loop<br>")
+            let j=0;
+            while(names[j]){
+                document.write(names[j] + "<br>")
+                j++;
+            }
          </script>
          
     </body>
